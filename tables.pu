@@ -1,0 +1,22 @@
+@startuml memoryApp
+class users{
+    +id : string
+    EMail : string
+    password : string
+}
+
+class subjects{
+    +id : string
+    Subject : string
+}
+
+class points{
+    +id : string
+    score : int
+    avgScore : int
+    time : int
+    avgTime : int
+}
+
+points : userId(FK)
+points : subjectId(FK)
